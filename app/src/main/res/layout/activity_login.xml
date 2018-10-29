@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_250"
+            android:background="#454545">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo_login"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size_60"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundButton1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:layout_marginTop="@dimen/size_20"
+                android:paddingHorizontal="@dimen/size_40">
+
+                <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/activity_login_btn_signup"
+                    android:text="Sign Up"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/size_15"
+                    android:background="@drawable/shape_background_button_2"
+                    android:gravity="center"
+                    android:onClick="signup"/>
+                <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/activity_login_btn_signin"
+                    android:text="Sign In"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/size_15"
+                    android:gravity="center"
+                    android:background="@drawable/shape_border_button_2"
+                    android:layout_marginLeft="@dimen/size_15"
+                    android:onClick="signin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_login_layout_signin"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_40"
+                android:paddingHorizontal="@dimen/size_10"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_5"
+                    android:paddingHorizontal="@dimen/size_10">
+
+                    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_signin_text_email"
+                        android:hint="Email"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_1"
+                        android:layout_alignParentLeft="true"/>
+                    <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_signin_edt_email"
+                        android:hint="john@gmail.com"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_1"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:gravity="end"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/activity_login_signin_text_email"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBackgroundButton2"
+                    android:layout_marginBottom="@dimen/size_15" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_login_signin_layout_password"
+                    android:layout_marginBottom="@dimen/size_5"
+                    android:paddingHorizontal="@dimen/size_10">
+
+                    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_signin_text_password"
+                        android:text="Password"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_1"
+                        android:gravity="center"
+                        android:layout_alignParentLeft="true"/>
+                    <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_signin_edt_password"
+                        android:hint="********"
+                        android:textColorHint="@color/colorWhite"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_1"
+                        android:inputType="textWebPassword"
+                        android:maxLines="1"
+                        android:gravity="center|end"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/activity_login_signin_text_password"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBackgroundButton2"
+                    android:layout_marginBottom="@dimen/size_15" />
+
+                <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password ?"
+                    android:textColor="@color/colorBackgroundButton2"
+                    android:textSize="@dimen/size_15"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_40"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_35"
+                        android:text="Login"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_15"
+                        android:gravity="center"
+                        android:background="@drawable/shape_background_button_green"
+                        android:onClick="login"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_login_layout_signup"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/size_40"
+                    android:paddingHorizontal="@dimen/size_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_5"
+                        android:paddingHorizontal="@dimen/size_10">
+
+                        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_signup_text_email"
+                            android:hint="Email"
+                            android:textColorHint="@color/colorWhite"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:layout_alignParentLeft="true"/>
+                        <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_signup_edt_email"
+                            android:hint="john@gmail.com"
+                            android:textColorHint="@color/colorWhite"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:inputType="textEmailAddress"   android:maxLines="1"
+                            android:gravity="end"
+                            android:background="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/activity_login_signup_text_email"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackgroundButton2"
+                        android:layout_marginBottom="@dimen/size_15" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_signup_layout_password"
+                        android:layout_marginBottom="@dimen/size_5"
+                        android:paddingHorizontal="@dimen/size_10">
+
+                        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_signup_text_password"
+                            android:text="Password"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:gravity="center"
+                            android:layout_alignParentLeft="true"/>
+                        <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_signup_edt_password"
+                            android:hint="********"
+                            android:textColorHint="@color/colorWhite"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:inputType="textWebPassword"
+                            android:maxLines="1"
+                            android:gravity="center|end"
+                            android:background="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/activity_login_signup_text_password"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackgroundButton2"
+                        android:layout_marginBottom="@dimen/size_15" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_signup_layout_confirm_password"
+                        android:layout_marginBottom="@dimen/size_5"
+                        android:paddingHorizontal="@dimen/size_10">
+
+                        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_signup_text_confirm_password"
+                            android:text="Confirm Password"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:gravity="center"
+                            android:layout_alignParentLeft="true"/>
+                        <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_signup_edt_conirm_password"
+                            android:hint="********"
+                            android:textColorHint="@color/colorWhite"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:inputType="textWebPassword"
+                            android:maxLines="1"
+                            android:gravity="end|center"
+                            android:background="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/activity_login_signup_text_confirm_password"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackgroundButton2"
+                        android:layout_marginBottom="@dimen/size_15" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingHorizontal="@dimen/size_20"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_2"
+                        android:id="@+id/activity_login_signup_btn_facebook"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape_background_button_1">
+
+                        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Login with Facebook"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_2"
+                            android:gravity="center"
+                            android:drawableLeft="@drawable/ic_facebook_logo"
+                            android:drawablePadding="@dimen/size_20"/>
+
+                    </LinearLayout>
+                    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_2"
+                        android:layout_weight="1"
+                        android:id="@+id/activity_login_signup_btn_twitter"
+                        android:text="Create account"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_2"
+                        android:background="@drawable/shape_background_button_1"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/size_8"
+                        android:layout_above="@+id/activity_login_signup_btn_facebook"
+                        android:onClick="create_account"/>
+
+                    <!--              <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height_2"
+                        android:layout_weight="1"
+                        android:id="@+id/activity_login_btn_signup"
+                        android:text="Sign up"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_2"
+                        android:background="@drawable/shape_background_button_green"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/size_15"
+                        android:paddingHorizontal="@dimen/size_35"
+                        android:paddingVertical="@dimen/size_8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_above="@+id/activity_login_btn_twitter"/>
+    -->
+                    <!--
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_layout_confirm_password"
+                        android:layout_above="@+id/activity_login_btn_twitter"
+                        android:layout_marginBottom="@dimen/size_20">
+
+                        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_text_confirm_password"
+                            android:text="Conirm Password"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:layout_alignParentLeft="true"/>
+                        <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_edt_conirm_password"
+                            android:hint="12345678"
+                            android:textColorHint="@color/colorWhite"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:inputType="textWebPassword"
+                            android:maxLines="1"
+                            android:gravity="end"
+                            android:background="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/activity_login_text_confirm_password"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorWhite"
+                        android:layout_above="@+id/activity_login_btn_twitter"
+                        android:layout_marginBottom="@dimen/size_15" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_login_layout_password"
+                        android:layout_above="@+id/activity_login_layout_confirm_password"
+                        android:layout_marginBottom="@dimen/size_20">
+
+                        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_text_password"
+                            android:text="Password"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:layout_alignParentLeft="true"/>
+                        <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_edt_password"
+                            android:hint="12345678"
+                            android:textColorHint="@color/colorWhite"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:inputType="textWebPassword"
+                            android:maxLines="1"
+                            android:gravity="end"
+                            android:background="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/activity_login_text_password"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorWhite"
+                        android:layout_above="@+id/activity_login_layout_confirm_password"
+                        android:layout_marginBottom="@dimen/size_15" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/activity_login_layout_password"
+                        android:layout_marginBottom="@dimen/size_20">
+
+                        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_text_email"
+                            android:hint="Email"
+                            android:textColorHint="@color/colorWhite"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:layout_alignParentLeft="true"/>
+                        <com.slatte.vaibhav.slatte.customtext.CustomEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_login_edt_email"
+                            android:text="johndeo@gmail.com"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_1"
+                            android:maxLines="1"
+                            android:gravity="end"
+                            android:background="@android:color/transparent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/activity_login_text_email"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorWhite"
+                        android:layout_above="@+id/activity_login_layout_password"
+                        android:layout_marginBottom="@dimen/size_15" />
+    -->
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
