@@ -32,6 +32,10 @@ public class Step_1 extends AppCompatActivity implements View.OnClickListener {
         cardView_learner.setOnClickListener(this);
     }
 
+    public void go_to_parents(View view){
+        startActivity(new Intent(this, Step_1_User.class).putExtra("type", "parents"));
+    }
+
     @Override
     public void onClick(View v) {
 
@@ -40,6 +44,5 @@ public class Step_1 extends AppCompatActivity implements View.OnClickListener {
         } else if(v.getId() == R.id.activity_step_1_card_2){
             startActivity(new Intent(this, Step_1_User.class).putExtra("type", "learner"));
         }
-
     }
 }

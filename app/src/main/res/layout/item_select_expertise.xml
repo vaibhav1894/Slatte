@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10sp"
+    android:layout_marginBottom="15sp">
+
+    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_select_expertise_text"
+        android:text="High School"
+        android:paddingHorizontal="10sp"
+        android:paddingVertical="8sp"
+        android:background="@drawable/shape_border_button_2"
+        android:textColor="#383838"
+        android:textSize="12dp"/>
+
+</LinearLayout>

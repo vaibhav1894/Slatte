@@ -8,9 +8,13 @@
 
     <color name="colorBackgroundLogin">#58585C</color>
     <color name="colorBackgroundButton1">#383838</color>
-    <color name="colorBackgroundButton2">#535353</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_38">#61FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
     <color name="button_background_color_green">#8ad835</color>
 
+
     <color name="text_color_1">#535353</color>
+    <color name="view_color">#33FFFFFF</color>
 
 </resources>
