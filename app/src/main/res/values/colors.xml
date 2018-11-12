@@ -13,6 +13,8 @@
     <color name="white_40">#66FFFFFF</color>
     <color name="button_background_color_green">#8ad835</color>
     <color name="fogg_color">#F5F5F5</color>
+    <color name="radio_on">#3BFCA9</color>
+    <color name="radio_off">#8F8F8F</color>
 
 
     <color name="text_color_1">#535353</color>

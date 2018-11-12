@@ -43,7 +43,9 @@
             android:name=".activity.SelectExpertiseActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".activity.SelectTags" />
-        <activity android:name=".activity.SuggestedCommunityActivity"></activity>
+        <activity android:name=".activity.SuggestedCommunityActivity" />
+        <activity android:name=".activity.CreateCommunity" />
+        <activity android:name=".activity.InviteContacts"></activity>
     </application>
 
 </manifest>

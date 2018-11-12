@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutUserActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_img">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_centerVertical="true"/>
+
+        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:text="Skip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_40"/>
+
+    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Community"
+        android:textSize="@dimen/size_25"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_background_circle"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/size_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Cover Image"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_background_button_1"
+        android:layout_marginHorizontal="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_name"
+                android:text="Community Name"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Juniormaths"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_name"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_city"
+                android:text="Description"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A groupp of people..."
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_city"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_qualification"
+                android:text="Tags"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="These tags are keyword that describe community and help other members to discover it better."
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:layout_marginTop="@dimen/size_5"
+                android:layout_below="@+id/activity_step_2_text_qualification"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_current_occupation"
+                android:text="Community Type"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Private"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_current_occupation"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Create Community"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@drawable/shape_background_button_green"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

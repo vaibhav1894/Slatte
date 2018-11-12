@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutUserActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_img">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_40"/>
+
+    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Few more details about you..."
+        android:textSize="@dimen/size_15"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/size_15"/>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_background_circle"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Profile Image"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_background_button_1"
+        android:layout_marginHorizontal="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_name"
+                android:text="Name"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_name"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_city"
+                android:text="City"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Delhi"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_city"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_qualification"
+                android:text="Qualification"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MSC Maths"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_qualification"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_current_occupation"
+                android:text="Current Occupation"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full time Teacher"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_current_occupation"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_age"
+                android:text="Age"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="35 years"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_age"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_email_id"
+                android:text="Email ID"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="johndoe@gmail.com"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_email_id"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15sp">
+
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_step_2_text_expertise"
+                android:text="Expertise"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+            <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_about_user_add_expertise"
+                android:text="Tap to add"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_step_2_text_expertise"
+                android:onClick="about_user_add_expertise"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These tags are keywords that describe you and help other members discover and know you better."
+        android:textSize="14sp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Next"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@drawable/shape_background_button_green"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="about_user_next"/>
+
+    </LinearLayout>
+
+</LinearLayout>

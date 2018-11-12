@@ -29,7 +29,6 @@ public class Splash extends AppCompatActivity {
         imgLogo.startAnimation(animationLogo);*/
 
 
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

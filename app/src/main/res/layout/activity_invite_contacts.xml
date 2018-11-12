@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutUserActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_img">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_centerVertical="true"/>
+
+        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:text="Skip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_40"/>
+
+    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        android:text="iPhone &amp; iCloude Contacts"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white_40"
+        android:paddingHorizontal="@dimen/size_10"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Mattie Crawford"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Don Owens"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Mattie Crawford"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+
+    </LinearLayout>
+    <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        android:text="work email contacts"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white_40"
+        android:paddingHorizontal="@dimen/size_10"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Viola Cortez"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Alejandro Moore"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Randall Hanson"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Viola Mullins"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Lois Holland"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/colorBackgroundButton1"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:track="@drawable/switch_track"
+            android:thumb="@drawable/switch_thumb"
+            android:textSize="16sp"
+            android:text="Alta Cannon"
+            android:textColor="@color/colorWhite"
+            android:background="@color/white_40"
+            android:inputType="textCapSentences"
+            android:gravity="left|center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <com.slatte.vaibhav.slatte.customtext.CustomTextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Invite Selected"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@drawable/shape_background_button_green"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
